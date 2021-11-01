@@ -7,9 +7,9 @@
 }
 
 html {
-  font-family: 'Fira Code', monospace;
+  font-family: Helvetica, sans-serif;
   font-size: 17px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 html, body {
@@ -31,26 +31,27 @@ header, main, footer {
 
 header, footer {
   flex-shrink: 0;
+  height: 20%;
 }
 
 main {
-  height: 100%;
   flex-grow: 1;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: calc(20px + 3vw);
+}
+
+footer {
   align-items: center;
   justify-content: center;
 }
 
 a {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   text-decoration: none;
-  line-height: 1.3;
   color: azure;
-  background-color: #000;
-  margin: 20px;
+  margin: calc(20px + 5vw);
   text-align: left;
-  padding: 4px;
   border-radius: 2px;
 }
 
@@ -89,6 +90,11 @@ a:hover {
   width: calc(200px + 16vw);
 }
 
+.slice {
+  z-index: 1;
+}
+
 .mark {
-  margin-bottom: 40px;
+ z-index: 2;
+ position: fixed;
 }
